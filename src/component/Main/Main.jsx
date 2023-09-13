@@ -23,8 +23,6 @@ const Main = () => {
     setAddCart(newCart);
   };
 
-  console.log(totalPrice);
-
   return (
     <div className="lg:flex justify-around">
       <div className="max-w-3xl grid md:grid-cols-2 gap-4">
