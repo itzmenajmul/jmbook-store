@@ -1,3 +1,3 @@
 # React
 
-- [Live site](https://babeljs.io/)
+- [Live site](https://jmbookstore.netlify.app/)

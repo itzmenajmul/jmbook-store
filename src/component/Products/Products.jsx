@@ -1,6 +1,6 @@
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 import { AiOutlineShoppingCart } from "react-icons/ai";
-const Products = ({ product }) => {
+const Products = ({ product, handleAddBook }) => {
   const { name, image, originalPrice, discountPrice, rating } = product;
   return (
     <div>
@@ -21,7 +21,10 @@ const Products = ({ product }) => {
               <p>Rating - {rating}</p>
             </div>
             <div className="card-actions justify-start">
-              <button className="btn font-semibold text-white bg-[#BC7AF9]">
+              <button
+                onClick={() => handleAddBook(product)}
+                className="btn font-semibold text-white bg-[#BC7AF9]"
+              >
                 <AiOutlineShoppingCart className="text-2xl"></AiOutlineShoppingCart>
                 Add To Cart
               </button>
@@ -35,7 +38,8 @@ const Products = ({ product }) => {
 };
 
 Products.propTypes = {
-    product: PropTypes.object,
-}
+  product: PropTypes.object,
+  handleAddBook: PropTypes.func,
+};
 
 export default Products;
