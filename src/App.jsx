@@ -1,11 +1,12 @@
 import "./App.css";
+import Header from "./component/Header/Header";
+import Main from "./component/Main/Main";
 
 function App() {
   return (
     <div>
-      <h1 className="text-4xl text-purple-400">
-        Start project
-      </h1>
+      <Header />
+      <Main/>
     </div>
   );
 }
